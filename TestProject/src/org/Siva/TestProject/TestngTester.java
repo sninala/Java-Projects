@@ -1,6 +1,7 @@
 package org.Siva.TestProject;
 
 import org.testng.annotations.Test;
+
 import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.*;
@@ -8,6 +9,8 @@ import java.util.*;
 import org.Siva.TestProject.TestDataManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class TestngTester {
@@ -42,6 +45,12 @@ public class TestngTester {
 	public void test3() {
 		AssertJUnit.assertEquals(true, true);
 	}
+	
+	@Test
+	  public void OpenSite() {
+		  WebDriver driver = new FirefoxDriver();
+		  driver.get("https://www.google.co.in/");
+	  }
 
 }
 

@@ -18,7 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class TestDataManager {
 	
-	private String excelFilePath = "/Users/krishna/workspace/TestProject/testData/testData.xlsx";
+	private String excelFilePath = "D:\\personal\\projects\\Java-Projects\\TestProject\\testData\\testData.xlsx";
 	private Hashtable<String, String> excelTestData = new Hashtable<String, String>();
 	private XSSFWorkbook wb;
 	private HSSFWorkbook wb2;
