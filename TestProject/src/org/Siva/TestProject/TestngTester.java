@@ -46,10 +46,12 @@ public class TestngTester {
 		AssertJUnit.assertEquals(true, true);
 	}
 	
-	@Test
+	@Test(description="selenium test", enabled=true)
 	  public void OpenSite() {
 		  WebDriver driver = new FirefoxDriver();
 		  driver.get("https://www.google.co.in/");
+		  System.out.println(driver.getCurrentUrl());
+		  driver.close();
 	  }
 
 }
